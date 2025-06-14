@@ -71,58 +71,63 @@ Make sure you have the following installed:
 
 ### 📦 Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd ticket-management-system
-Install Frontend Dependencies
+1. **Clone the Repository**
 
-bash
-Copy
-Edit
+```bash
+git clone <repository-url>
+cd ticket-management-system
+```
+
+2. **Install Frontend Dependencies**
+
+```bash
 cd frontend
 npm install
-Install Backend Dependencies
+```
 
-bash
-Copy
-Edit
+3. **Install Backend Dependencies**
+
+```bash
 cd ../backend
 npm install
-Configure Environment Variables
+```
 
-Create a .env file inside the backend/ directory:
+4. **Configure Environment Variables**
 
-env
-Copy
-Edit
+Create a `.env` file inside the `backend/` directory with the following content:
+
+```env
 PORT=5000
 MONGODB_URI=your_mongodb_uri
 JWT_SECRET=your_jwt_secret
-▶️ Running the Application
-Start Backend Server
+```
 
-bash
-Copy
-Edit
+▶️ Running the Application
+
+✅ Start Backend Server
+
+```bash
 cd backend
 npm run dev
-Start Frontend Development Server
+```
 
-bash
-Copy
-Edit
+✅ Start Frontend Development Server
+
+```bash
 cd ../frontend
 npm run dev
-📍 The app will be running at:
+```
 
-Frontend: http://localhost:5173
+📍 Application URLs
 
-Backend: http://localhost:5000
+- Frontend: http://localhost:5173
+- Backend: http://localhost:5000
 
 📡 API Endpoints
-Endpoint	Description
-/api/users	User registration/login
-/api/departments	Manage departments
-/api/tickets	Create & manage tickets
-/api/escalation-rules	Define escalation policies
+
+| Endpoint                | Description                   |
+|-------------------------|-------------------------------|
+| /api/users              | User registration/login       |
+| /api/departments        | Manage departments            |
+| /api/tickets            | Create & manage tickets       |
+| /api/escalation-rules   | Define escalation policies    |
